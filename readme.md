@@ -83,8 +83,21 @@ Running
 ./orgtotsv things.org
 ```
 
-creates a file things.tsv holding the output. You can see this example 
-and the output in the repo.
+prints the output to the screen. This example file and its output is
+found in the repo. You can use
+
+```
+./orgtotsv things.org > things.tsv
+```
+
+to write the file to disk if that's what you need. It prints to stdout
+because the intended use case is piping into tsv-utils. See the examples
+folder for an example showing how to filter for all tasks due in the
+next two days sorted by date.
+
+The output is in four columns. Column 1 is the task description, column
+2 is the date in YYYY-MM-DD format, column 3 is the time in HH:MM am or
+H:MM am format, and column 4 is the note associated with that task.
 
 This is the entirety of what orgtotsv does. The tsv file can then be
 queried using tsv-utils. You will want to replace the control codes for

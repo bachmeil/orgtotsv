@@ -1,0 +1,12 @@
+* Buy dog food <2019-11-06 Wed>
+* Buy cat food <2019-11-11 Mon>
+* Renew my driver's license <2019-11-04 Mon>
+* Finish the report <2019-11-05 Tue>
+Details:
+
+- Write lots of stuff
+- Make it look pretty
+* Buy a cat <2019-11-11 Mon>
+Not one of those ugly cats. A pretty one, with black stripes.
+* Get the flu shot <2019-11-05 Tue>
+* Leave work early to watch the football game. <2019-11-05 Tue>
