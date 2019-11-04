@@ -1,4 +1,4 @@
-import std.file, std.path, std.regex, std.string;
+import std.file, std.path, std.regex, std.stdio, std.string;
 
 Regex!char reDate = regex(`(?<=\s<)[0-9]{4}-[0-9]{2}-[0-9]{2}[ ][A-Z][a-z]{2}(?=>(\s|$))`);
 Regex!char reTime = regex(`(?<=\s<)[0-9]{1,2}\:[0-9]{2} [ap]m(?=>(\s|$))`);
@@ -31,5 +31,5 @@ void main(string[] args) {
 		}
 		result ~= "\n";
   }
-  std.file.write(args[1].setExtension("tsv"), result);
+  writeln(result);
 }
